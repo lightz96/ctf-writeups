@@ -7,7 +7,7 @@
 Notice that the website is vulnerable to XSS
 
 <p align="center">
-    <img src="images/pastebin-2.png" style="border: 0.8px solid black" caption="Challenge" /><br/>
+    <kbd><img src="images/pastebin-2.png" style="border: 0.8px solid black" caption="Challenge" /><kbd><br/>
 </p>
 
 <p align="center">
