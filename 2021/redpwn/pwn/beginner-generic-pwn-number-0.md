@@ -22,6 +22,8 @@ To start, perform fuzzing <br />
     <kbd><img src="images/pwn0-4.png" caption="Challenge" /></kbd><br/>
 </p>
 
+Set breakpoint at the instruction where the program compares `rbp-0x8` with 0xffffffffffffffff. Run the program and provide the above payload.
+
 View registers <br />
 `$ info registers` <br />
 <p align="center">
