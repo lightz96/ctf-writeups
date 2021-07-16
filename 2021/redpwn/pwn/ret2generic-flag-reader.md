@@ -9,7 +9,7 @@ From the source code, I understand that I need to overwrite the ret address to t
     <kbd><img src="images/ret2generic-2.png" caption="Challenge" /></kbd><br/>
 </p>
 
-Since the variable comments_and_concerns has a size of 32, I need to spray 40 random characters (32 bytes for the variable “comments_and_concerns” and 8 bytes for the stored rbp) and then the address of super_generic_flag_reading_function_please_ret_to_me() function
+Since the variable "comments_and_concerns" has a size of 32, I need to spray 40 random characters (32 bytes for the variable “comments_and_concerns” and 8 bytes for the stored rbp) and then the address of super_generic_flag_reading_function_please_ret_to_me() function
 
 To start, find the address of super_generic_flag_reading_function_please_ret_to_me() function <br />
 `$ p super_generic_flag_reading_function_please_ret_to_me` <br />
