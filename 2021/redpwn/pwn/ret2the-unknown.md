@@ -120,5 +120,5 @@ flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford-housin
 Flag: `flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford-housing}`
 
 # Resources
-https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html
+https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html <br />
 https://github.com/Gallopsled/pwntools-tutorial
