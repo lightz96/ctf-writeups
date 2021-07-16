@@ -115,9 +115,9 @@ run
 $ cat flag.txt
 flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford-housing}
 [*] Got EOF while reading in interactive
-
-flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford-housing}
 ```
+
+Flag: `flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford-housing}`
 
 # Resources
 https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html
