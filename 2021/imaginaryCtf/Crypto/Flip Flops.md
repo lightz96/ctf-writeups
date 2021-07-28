@@ -5,7 +5,7 @@
 
 ## Solution
 
-> TDLR: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext so that the corresponding byte of the plaintext changes when decrypt.
+> TDLR: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext (C<sub>i-1</sub>) so that the corresponding byte of the plaintext (P<sub>i</sub>) changes when decrypt.
 
 Given code:
 ``` python
@@ -82,7 +82,7 @@ P<sub>i</sub>' = P<sub>i</sub> XOR P<sub>i</sub> XOR [P<sub>i</sub> with a modif
 
 P<sub>i</sub>' = [P<sub>i</sub> with one byte modified]
 
-Idea: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext so that the corresponding byte of the plaintext changes when decrypt. 
+Idea: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext (C<sub>i-1</sub>) so that the corresponding byte of the plaintext (P<sub>i</sub>) changes when decrypt. 
 
 Working POC:
 ``` python
