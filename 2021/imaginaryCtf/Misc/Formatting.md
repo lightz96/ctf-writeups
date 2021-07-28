@@ -4,6 +4,9 @@
 `Wait, I thought format strings were only in C???`
 
 ## Solution
+
+> TLDR: Access the object attribute `__global__` to display the value of the global variable "flag"
+
 Given code:
 ``` python
 #!/usr/bin/env python3
