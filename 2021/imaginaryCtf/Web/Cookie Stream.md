@@ -125,6 +125,9 @@ print("Original : " + nonce + hexlify(encrypt(key, known_plaintext)).decode())
 #Print actual encrypted text
 print("Edited   : " + nonce + hexlify(encrypt(key, username)).decode())
 ```
+<p align="center">
+    <kbd><img src="images/CookieStream-1.png" caption="Challenge" /></kbd><br/>
+</p>
 
 Flag: `ictf{d0nt_r3us3_k3ystr34ms_b72bfd21}`
 
