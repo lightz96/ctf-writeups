@@ -60,7 +60,6 @@ Welcome to Stonks as a Service!
 Enter any input, and we'll say it back to you with any '{a}' replaced with 'stonks'! Try it out!
 > {a.__init__.__globals__[flag]}
 ictf{c4r3rul_w1th_f0rmat_str1ngs_4a2bd219}    
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
 ## Resources
