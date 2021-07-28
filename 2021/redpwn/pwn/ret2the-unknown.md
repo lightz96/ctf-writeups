@@ -42,7 +42,7 @@ From the program, I know that ASLR is enabled.
     <kbd><img src="images/ret2theunknown-5.png" caption="Challenge" /></kbd><br/>
 </p>
 
-Idea to pwn this challenge: Overwrite the value of RIP to address of main function so that it reruns the program. Then, obtain the address of printf function from the output and used it to find the base libc address. Once I have updated the base libc address, I can get the address of `system` as well as the strings `/bin/sh`. I also obtain ROP gadget `pop rdi; ret` from the binary (pass `/bin/sh` as an argument to `system`).
+Idea to pwn this challenge: Overwrite the ret address to address of main function so that it reruns the program. Then, obtain the address of printf function from the output and used it to find the base libc address. Once I have updated the base libc address, I can get the address of `system` as well as the strings `/bin/sh`. I also obtain ROP gadget `pop rdi; ret` from the binary (pass `/bin/sh` as an argument to `system`).
 
 Using [ropper](https://github.com/sashs/Ropper), I know that there exists “pop rdi; ret” gadget in the binary. <br />
 `$ python3 Ropper.py -f ../ret2the-unknown --search "% ?di"` <br />
@@ -122,3 +122,4 @@ Flag: `flag{rob-is-proud-of-me-for-exploring-the-unknown-but-i-still-cant-afford
 # Resources
 https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html <br />
 https://github.com/Gallopsled/pwntools-tutorial
+https://medium.com/@ar33zy/encryptctf-2019-pwn-write-up-4-of-5-6fc5779d51fa
