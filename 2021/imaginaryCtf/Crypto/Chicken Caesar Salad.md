@@ -1,7 +1,9 @@
 # Chicken Caesar Salad
 
-`Description: I remember the good old days when Caesar ciphers were easy…`
+## Challenge Description
+`I remember the good old days when Caesar ciphers were easy…`
 
+## Solution
 The description of the challenge hinted that this is a caesar cipher challenge.
 
 Using cyberchef:
