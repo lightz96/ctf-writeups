@@ -3,11 +3,11 @@
 ## Challenge Description
 `Wait, I thought format strings were only in C???`
 
-## Solution
+## Challenge
 
 > TLDR: Access the object attribute `__global__` to display the value of the global variable "flag"
 
-Given code:
+### Given source code
 ``` python
 #!/usr/bin/env python3
 
@@ -42,6 +42,7 @@ if __name__ == "__main__":
     main()
 ```
 
+### Solution
 The vulnerability lies on `inp.format()`, it allows me to access the attributes of the object.
 
 Note: In python, every function has its own `__globals__` dictionary. When the program tries to retrieve globals variable within a function, it will lookup to this dictionary.

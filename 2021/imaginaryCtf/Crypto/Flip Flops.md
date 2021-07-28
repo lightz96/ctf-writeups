@@ -3,11 +3,10 @@
 ## Challenge Description
 `Yesterday, Roo bought some new flip flops. Let's see how good at flopping you are.`
 
-## Solution
-
+## Challlenge
 > TDLR: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext (C<sub>i-1</sub>) so that the corresponding byte of the plaintext (P<sub>i</sub>) changes when decrypt.
 
-Given code:
+### Given source code
 ``` python
 #!/usr/local/bin/python
 from Crypto.Cipher import AES
@@ -71,7 +70,7 @@ P<sub>0</sub> = Decrypt(C<sub>0</sub>) XOR IV
 
 P<sub>i</sub> = Decrypt(C<sub>i</sub>) XOR C<sub>i-1</sub> (for all i > 0)
 
-### Explanation
+### Solution
 By prepending 16 bytes of random characters before the word “gimm3flag” allows me to control C<sub>i-1</sub> so that I can change a byte in P<sub>i</sub>
 
 If I modify C<sub>i-1</sub> to C<sub>i-1</sub> XOR P<sub>i</sub> XOR [P<sub>i</sub> with a modified byte]:

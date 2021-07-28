@@ -3,10 +3,10 @@
 ## Challenge Description
 `Cookie streaming service? Naaaaaaah. Password protected Rickroll as a Service? YAAAAAAAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSS!`
 
-## Solution
+## Challenge
 > TDLR: Figure out the keystream, encrypt "admin" username and use it as cookie. 
 
-Source code:
+### Given source code
 ``` python
 from flask import Flask, render_template, request, make_response, redirect
 from Crypto.Cipher import AES
@@ -70,6 +70,12 @@ def handle_error(e):
     return redirect('/')
 ```
 
+### Background regarding AES-CTR
+Ciphertext = Keystream XOR plaintext <br />
+Ciphertext XOR plaintext = keystream <br />
+Ciphertext XOR keystream = plaintext <br />
+
+### Solution
 Using crackstation, I managed to obtain credentials for the following users:
 - ImaginaryCTFUser:idk
 - Eth007:supersecure
@@ -78,12 +84,6 @@ Using crackstation, I managed to obtain credentials for the following users:
 
 From the source code, the program is using AES-CTR to encrypt the cookie. For AES-CTR to be cryptographically secure, the counter cannot be repeated. However, in this case, the counter is repeated.
 
-### Background regarding AES-CTR
-Ciphertext = Keystream XOR plaintext <br />
-Ciphertext XOR plaintext = keystream <br />
-Ciphertext XOR keystream = plaintext <br />
-
-### Explanation
 Since the keystream is constant, I can obtain the keystream and use it to encrypt the plaintext.
 
 Notice that the program runs `pad(request.form['username'].encode(), 16))`. It pads the plaintext before encrypting.
