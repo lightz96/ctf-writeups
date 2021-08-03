@@ -4,7 +4,7 @@
 `Yesterday, Roo bought some new flip flops. Let's see how good at flopping you are.`
 
 ## Challlenge
-> TDLR: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext (C<sub>i-1</sub>) so that the corresponding byte of the plaintext (P<sub>i</sub>) changes when decrypt.
+> TLDR: Encrypt `16 bytes of random characters + "gimm3flag"`. Modify a byte in the first 16 bytes of the ciphertext (C<sub>i-1</sub>) so that the corresponding byte of the plaintext (P<sub>i</sub>) changes when decrypt.
 
 ### Given source code
 ``` python

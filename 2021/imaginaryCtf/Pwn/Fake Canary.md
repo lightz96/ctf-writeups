@@ -4,7 +4,7 @@
 `Description: Here at Stack Smasher Inc, we protect all our stacks with industry grade canaries!`
 
 ## Solution
-> TDLR: Spray 40 random characters to fill up the array, then provide 0xdeadbeef value (so that the value of the fake canary is not modified), spray 8 random characters to overwrite the stored rbp, provide the address of `ret` gadget (to fix misalignment issue) and lastly, provide the address of win() function (to spawn a shell).
+> TLDR: Spray 40 random characters to fill up the array, then provide 0xdeadbeef value (so that the value of the fake canary is not modified), spray 8 random characters to overwrite the stored rbp, provide the address of `ret` gadget (to fix misalignment issue) and lastly, provide the address of win() function (to spawn a shell).
 
 Ghidra's decompiled main() function
 ``` c

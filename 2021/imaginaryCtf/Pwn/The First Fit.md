@@ -4,7 +4,7 @@
 `Let's get started with a simple heap exploit!`
 
 ## Challenge
-> TDLR: Exploit Use-After-Free vulnerability. Call `malloc()` to allocate memory to variable b, call `free(a)`, call `free(b)` (although the memory is freed, variable b is still pointing to the address), call `malloc()` to allocate memory to variable a (variable a points to the same memory address as variable b). Write “/bin/sh” to the memory via option 3. Run system('/bin/sh') via option 4
+> TLDR: Exploit Use-After-Free vulnerability. Call `malloc()` to allocate memory to variable b, call `free(a)`, call `free(b)` (although the memory is freed, variable b is still pointing to the address), call `malloc()` to allocate memory to variable a (variable a points to the same memory address as variable b). Write “/bin/sh” to the memory via option 3. Run system('/bin/sh') via option 4
 
 ### Given source code
 ```c

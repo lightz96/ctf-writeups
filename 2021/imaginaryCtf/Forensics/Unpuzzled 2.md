@@ -4,7 +4,7 @@
 `Puzzler7's evil twin is hiding one more secret. Find it for us. (Note: the flag for this challenge ends with 6148}.)`
 
 ## Solution
-> TDLR: Unpuzzle7 has a `Repl.it` account. Found a base64 encoded string in one of his program and use cyberchef to decode it.
+> TLDR: Unpuzzle7 has a `Repl.it` account. Found a base64 encoded string in one of his program and use cyberchef to decode it.
 
 Using [sherlock](https://github.com/sherlock-project/sherlock):
 ``` bash

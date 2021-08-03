@@ -4,7 +4,7 @@
 `Cookie streaming service? Naaaaaaah. Password protected Rickroll as a Service? YAAAAAAAAAAAAAAAAAAAAAAAAAAAASSSSSSSSSSS!`
 
 ## Challenge
-> TDLR: Figure out the keystream, encrypt "admin" username and use it as cookie. 
+> TLDR: Figure out the keystream, encrypt "admin" username and use it as cookie. 
 
 ### Given source code
 ``` python
